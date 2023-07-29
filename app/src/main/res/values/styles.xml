@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ElonUz" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--        <color name="purple_200">#262B49</color>-->
+<!--        <color name="purple_500">#161D49</color>-->
+<!--        <color name="purple_700">#131629</color>-->
+<!--        <color name="black">#FF000000</color>-->
+<!--        <color name="white">#FFFFFFFF</color>-->
+<!--        <color name="grey">#80FFF-FFF</color>-->
+    </style>
+
+    <style name="Theme.ElonUz" parent="Base.Theme.ElonUz" />
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+
+        <uz.fergana.elonuz.library.SmoothBottomBar
+            android:id="@+id/bottomNavView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:backgroundColor="@color/purple_700"
+            app:cornerRadius="16dp"
+            app:corners="top_left|top_right"
+            app:iconSize="24dp"
+            app:iconTint="@color/white"
+            app:iconTintActive="@color/white"
+            app:indicatorColor="@color/purple_200"
+            app:indicatorRadius="30dp"
+            app:itemPadding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/main_menu"
+            app:sideMargins="10dp"
+            app:textColor="@color/white"
+            app:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
